@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .ani>button{
+        padding: 20px 30px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: blueviolet;
+        position: relative;
+        animation-name: animation;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes animation{
+        0%{
+            transform: rotate(0deg); left: 0px;
+        }
+        50%
+        {
+            transform: rotate(360deg); left: 500px; 
+        }
+        100%
+        {
+            transform: rotate(320deg); left: 0px;
+        }
+    }
+</style>
+<body>
+    <div class="ani">
+        <button>Animation</button>
+    </div>
+</body>
+</html>
